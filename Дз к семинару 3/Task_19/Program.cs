@@ -5,7 +5,7 @@
 23432 -> да
 12821 -> да
 */
-Console.Clear();
+
 
 bool Palindrom(string number)
 {
