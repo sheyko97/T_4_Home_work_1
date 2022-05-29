@@ -5,16 +5,16 @@
 Console.Clear();
 
 
-static void FindingDistanceBetweenPoints(int xa, int xb, int ya, int yb, int za, int zb)
+static void FindingDistanceBetweenPoints(int xa,int ya,int za, int xb, int yb, int zb)
 {
-    double result = Math.Sqrt((xa - xb) * (xa - xb) + (ya - yb) * (ya - yb) + (za - zb) * (za - zb));
-    System.Console.WriteLine($" ({xa},  {ya}, {za}, {xb}, {yb}, {zb})  - > {Math.Round(result, 2)}");
+    double result = Math.Sqrt((xb - xa) * (xb - xa) + (yb - ya) * (yb - ya) + (zb - za) * (zb - za));
+    Console.WriteLine($" A ({xa}, {ya}, {za}); B ({xb}, {yb}, {zb}))  - > {Math.Round(result, 2)}");
 }
-Console.WriteLine("Введите координаты первой точки A (x, y, z): ");
+Console.WriteLine("Введите координаты точки A (x, y, z): ");
 int xa = Convert.ToInt32(Console.ReadLine());
 int ya = Convert.ToInt32(Console.ReadLine());
 int za = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координаты первой точки B (x, y, z): ");
+Console.WriteLine("Введите координаты точки B (x, y, z): ");
 int xb = Convert.ToInt32(Console.ReadLine());
 int yb = Convert.ToInt32(Console.ReadLine());
 int zb = Convert.ToInt32(Console.ReadLine());
